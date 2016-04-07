@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="political-mishap">
+  <head>
+    <meta charset="utf-8">
+    <title>Political Mishap</title>
+    <script src="angular.min.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body ng-controller="CountryController">
+    <button ng-click="getMeMyCandidates()">Get Me My Candidates!</button>
+    <button ng-click="justPickAWinnerAlready()">Just pick a winner already!</button>
+
+    <h2>Republicans</h2>
+    <ul>
+      <li ng-repeat="candidate in republicans">
+        {{candidate}}
+      </li>
+    </ul>
+
+    <h2>Democrats</h2>
+    <ul>
+      <li ng-repeat="candidate in democrats">
+        {{candidate}}
+      </li>
+    </ul>
+
+    <h1>Winner!</h1>
+    {{winner}}
+  </body>
+</html>

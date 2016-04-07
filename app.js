@@ -3,7 +3,7 @@ var express = require('express');
 
 // Global Variables
 var republicans = ['British Dude', 'Monkey', 'Banjo Master', 'Turkey Guy'];
-var democrats = ['Overtly eating a bananna sandwhich  Person', 'Money Bags', 'Lives on Couch', 'Rocket Man'];
+var democrats = ['Overtly eating a bananna sandwhich person. AKA Joel', 'Money Bags', 'Lives on Couch', 'Rocket Man'];
 
 // Middleware
 var app = express();
