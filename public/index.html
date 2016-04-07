@@ -7,25 +7,40 @@
     <script src="client.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body ng-controller="CountryController">
-    <button ng-click="getMeMyCandidates()">Get Me My Candidates!</button>
-    <button ng-click="justPickAWinnerAlready()">Just pick a winner already!</button>
+  <body>
+    <header>
+      <h1><span class="red">&#9733</span> Political Mishap Observer <span class="blue">&#9733</span></h1>
+    </header>
+    <main ng-controller="CountryController">
+      <section class="buttons">
+        <button ng-click="getCandidates()">Get candidates</button>
+        <button ng-click="getWinner()">Pick Winner</button>
+      </section>
 
-    <h2>Republicans</h2>
-    <ul>
-      <li ng-repeat="candidate in republicans">
-        {{candidate}}
-      </li>
-    </ul>
+      <section class="parties">
+        <section class="party republicans">
+          <h2>Republicans</h2>
+          <ul>
+            <li ng-repeat="candidate in republicans">
+              {{candidate}}
+            </li>
+          </ul>
+        </section>
 
-    <h2>Democrats</h2>
-    <ul>
-      <li ng-repeat="candidate in democrats">
-        {{candidate}}
-      </li>
-    </ul>
+        <section class="party democrats">
+          <h2>Democrats</h2>
+          <ul>
+            <li ng-repeat="candidate in democrats">
+              {{candidate}}
+            </li>
+          </ul>
+        </section>
+      </section>
 
-    <h1>Winner!</h1>
-    {{winner}}
+      <section class="winner" ng-show="showWinner">
+        <h3>Winner!</h3>
+        <h1>{{winner}}</h1>
+      </section>
+    </main>
   </body>
 </html>
