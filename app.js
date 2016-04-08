@@ -2,8 +2,8 @@
 var express = require('express');
 
 // Global Variables
-var republicans = ['British Dude', 'Monkey', 'Banjo Master', 'Turkey Guy'];
-var democrats = ['Bananna Sandwhich Curator (aka Joel)', 'Money Bags', 'Lives on Couch', 'Rocket Man'];
+var republicans = ['British Dude', 'Monkey', 'Banjo Master', 'Ostrich Thief'];
+var democrats = ['Bananna Sandwich Curator (aka Joel)', 'Money Bags', 'Lives on Couch', 'Rocket Man'];
 
 // Middleware
 var app = express();
